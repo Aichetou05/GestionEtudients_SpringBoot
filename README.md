@@ -10,7 +10,7 @@ A RESTful web service built with Spring Boot for managing student information. T
 - **In-Memory Storage**: Simple HashMap-based storage for demonstration
 - **Error Handling**: Custom exception handling for resource not found scenarios
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running this project, ensure you have the following installed:
 
@@ -18,7 +18,7 @@ Before running this project, ensure you have the following installed:
 - **Maven 3.6+** (or use the included Maven Wrapper)
 - **IDE** (IntelliJ IDEA, Eclipse, or VS Code recommended)
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Spring Boot 3.5.7**: Framework (java) for building the application
 - **Spring Web**: For REST API development
@@ -26,7 +26,7 @@ Before running this project, ensure you have the following installed:
 - **Java 17**: Programming language
 - **Maven**: Build and dependency management
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 GestionEtudients_SpringBoot/
@@ -47,7 +47,7 @@ GestionEtudients_SpringBoot/
 └── pom.xml
 ```
 
-## 🏃 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -92,7 +92,7 @@ Or run the `SupnumApplication.java` class directly from your IDE.
 
 The application will start on `http://localhost:8080`
 
-## 📚 API Endpoints
+## API Endpoints
 
 ### Base URL
 ```
@@ -204,14 +204,14 @@ DELETE /api/etudiants/1
 
 **Response:** `204 No Content`
 
-## 📖 API Documentation
+## API Documentation
 
 Once the application is running, you can access the interactive API documentation at:
 
 - **Swagger UI**: `http://localhost:8080/swagger-ui.html`
 - **OpenAPI JSON**: `http://localhost:8080/v3/api-docs`
 
-## 🧪 Testing the API
+## Testing the API
 
 ### Using cURL
 
@@ -260,7 +260,7 @@ curl -X DELETE http://localhost:8080/api/etudiants/1
 
 Import the API endpoints into your preferred API client tool and test the endpoints interactively.
 
-## 📦 Student Model
+## Student Model
 
 The `Etudiant` (Student) model contains the following fields:
 
@@ -273,7 +273,7 @@ The `Etudiant` (Student) model contains the following fields:
 | filiere | String | Field of study |
 | niveau | int | Academic level/year |
 
-## ⚠️ Error Handling
+## Error Handling
 
 The API returns appropriate HTTP status codes:
 
@@ -283,7 +283,7 @@ The API returns appropriate HTTP status codes:
 - `404 Not Found`: Student not found
 - `400 Bad Request`: Invalid request data
 
-## 🔧 Configuration
+## Configuration
 
 The application configuration is located in `src/main/resources/application.properties`:
 
@@ -291,13 +291,13 @@ The application configuration is located in `src/main/resources/application.prop
 spring.application.name=supnum
 ```
 
-## 🚧 Limitations
+## Limitations
 
 - **In-Memory Storage**: Data is stored in memory and will be lost when the application restarts
 - **No Persistence**: No database integration (can be added for production use)
 - **No Validation**: Basic validation can be added for data integrity
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Database integration (JPA/Hibernate with MySQL/PostgreSQL)
 - Input validation and error handling improvements
@@ -306,15 +306,15 @@ spring.application.name=supnum
 - Unit and integration tests
 - Docker containerization
 
-## 📝 License
+## License
 
 This project is part of a learning exercise and is provided as-is.
 
-## 👤 Author
+## Author
 
 Created as part of SOA (Service-Oriented Architecture) course exercises.
 
-## 🤝 Contributing
+## Contributing
 
 This is an educational project. Feel free to fork and modify for your own learning purposes.
 
