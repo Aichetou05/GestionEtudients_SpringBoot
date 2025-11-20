@@ -1,0 +1,8 @@
+com\supnum\etudiant\GetAllEtudiantsRequest.class
+com\supnum\etudiant\package-info.class
+com\supnum\etudiant\Etudiant.class
+com\supnum\etudiant\ObjectFactory.class
+com\supnum\soap_etudiant\SoapEtudiantApplication.class
+com\supnum\etudiant\GetAllEtudiantsResponse.class
+com\supnum\etudiant\GetEtudiantResponse.class
+com\supnum\etudiant\GetEtudiantRequest.class

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Ce fichier a été généré par Eclipse Implementation of JAXB, v3.0.0 
+Voir https://eclipse-ee4j.github.io/jaxb-ri 
+Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+Généré le : 2025.11.20 à 11:07:48 PM CET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://supnum.com/etudiant">
+    <schemaBindings map="false">
+      <package name="com.supnum.etudiant"/>
+    </schemaBindings>
+    <bindings scd="tns:GetEtudiantRequest">
+      <class ref="com.supnum.etudiant.GetEtudiantRequest"/>
+    </bindings>
+    <bindings scd="tns:GetEtudiantResponse">
+      <class ref="com.supnum.etudiant.GetEtudiantResponse"/>
+    </bindings>
+    <bindings scd="~tns:Etudiant">
+      <class ref="com.supnum.etudiant.Etudiant"/>
+    </bindings>
+    <bindings scd="tns:GetAllEtudiantsRequest">
+      <class ref="com.supnum.etudiant.GetAllEtudiantsRequest"/>
+    </bindings>
+    <bindings scd="tns:GetAllEtudiantsResponse">
+      <class ref="com.supnum.etudiant.GetAllEtudiantsResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

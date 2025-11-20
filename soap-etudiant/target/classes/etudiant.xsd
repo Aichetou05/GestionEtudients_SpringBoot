@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://supnum.com/etudiant"
+            xmlns="http://supnum.com/etudiant"
+            elementFormDefault="qualified">
+
+    <!-- Type Etudiant -->
+    <xsd:complexType name="Etudiant">
+        <xsd:sequence>
+            <xsd:element name="id" type="xsd:long"/>
+            <xsd:element name="nom" type="xsd:string"/>
+            <xsd:element name="prenom" type="xsd:string"/>
+            <xsd:element name="email" type="xsd:string"/>
+            <xsd:element name="filiere" type="xsd:string"/>
+            <xsd:element name="annee" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Requête GetEtudiant -->
+    <xsd:element name="GetEtudiantRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id" type="xsd:long"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Réponse GetEtudiant -->
+    <xsd:element name="GetEtudiantResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="etudiant" type="Etudiant"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Liste des étudiants - Request -->
+    <xsd:element name="GetAllEtudiantsRequest">
+        <xsd:complexType>
+            <xsd:sequence/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Liste des étudiants - Response -->
+    <xsd:element name="GetAllEtudiantsResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="etudiant" type="Etudiant" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
