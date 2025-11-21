@@ -45,7 +45,6 @@
             <artifactId>jaxb-runtime</artifactId>
         </dependency>
 
-        <!-- اختياري للاختبار -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -56,7 +55,6 @@
     <build>
         <plugins>
 
-            <!-- Plugin لتوليد الكلاسات من XSD -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>jaxb2-maven-plugin</artifactId>
@@ -71,6 +69,9 @@
                             <sources>
                                 <source>src/main/resources/etudiant.xsd</source>
                             </sources>
+                            <outputDirectory>
+								${project.build.directory}/generated-sources/jaxb
+							</outputDirectory>
                             <packageName>com.supnum.etudiant</packageName>
                         </configuration>
                     </execution>
